@@ -1,0 +1,7 @@
+
+active: domain
+
+domain:
+  domain: domain.com
+  port: 8080
+  proxy: localhost

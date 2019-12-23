@@ -1,0 +1,12 @@
+
+active: bot, admin
+
+bot:
+  domain: botmother.chatforge.me
+  port: 8001
+  proxy: localhost
+
+admin:
+  domain: dev-admin.chatforge.me
+  port: 8002
+  proxy: localhost

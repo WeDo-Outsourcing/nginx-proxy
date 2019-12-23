@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  nginx:
+    build:
+      context: ./
+      dockerfile: docker/Dockerfile
+      args:
+        CERTBOT: ${CERTBOT}
+    container_name: nginx
+    volumes:
+      - ./:/docker
+      - ./docker/nginx/nginx.conf:/etc/nginx/nginx.conf
+    ports:
+      - ${APP_PORT}:80
+      - ${APP_HTTPS_PORT}:443
